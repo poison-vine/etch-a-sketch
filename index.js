@@ -1,6 +1,13 @@
 const container = document.querySelector("#container");
 const resetButton = document.querySelector('#resetButton');
 
+let mouseDown = false;
+
+document.body.addEventListener("mousedown", ()=>mouseDown=true);
+document.body.addEventListener("mouseup", ()=>mouseDown=false);
+
+
+
 if(resetButton)
 {
     resetButton.addEventListener("click" , (e)=>{
@@ -21,9 +28,12 @@ function resetGrid(dimensions){
     {
         const div = document.createElement('div');
         div.className = "grid-box";
+        div.addEventListener('mouseover', (e)=>{
+            if(mouseDown)div.style.backgroundColor = "black";
+        })
         container.append(div);
     }
-
-
 }
+
+resetGrid(100);
 
