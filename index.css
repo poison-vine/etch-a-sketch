@@ -1,7 +1,5 @@
 #container{
     display:grid;
-    grid-template-columns:repeat(16,auto);
-    grid-template-rows:repeat(16,auto);
     grid-gap:0px;
     width: 600px;
     height:600px;
@@ -12,6 +10,7 @@
 .grid-box{
     background-color: grey;
     width: auto;
+    height:auto;
 }
 
 .grid-box:hover{
