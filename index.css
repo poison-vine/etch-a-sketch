@@ -1,0 +1,9 @@
+#container{
+    display:grid;
+}
+
+.grid-box{
+    background-color: grey;
+    width: 6vw;
+    height: 6vh;
+}
