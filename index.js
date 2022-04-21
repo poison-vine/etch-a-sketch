@@ -15,6 +15,7 @@ if(resetButton)
 function resetGrid(dimensions){
     container.innerHTML ='';
     container.style.gridTemplateRows = "auto ".repeat(dimensions);
+    container.style.gridTemplateColumns = "auto ".repeat(dimensions);
 
     for(let i=0; i< dimensions*dimensions; i++)
     {
